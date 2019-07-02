@@ -123,8 +123,6 @@ line4=line1 + line2 + line3
 print(line1.find('you'),line4.count('python'))
 
 ```
-Here, hash(#) represent spaces.
-
 - A: 9,2
 - B: 9 1
 - C: (9,1)
