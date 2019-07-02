@@ -113,3 +113,31 @@ At Index 0, integer a is formatted into a float with 4 decimal points, thus 3.00
 </details>
 
 ---
+###### 5. What's the output?
+
+```python
+line1='And here you can learn '
+line2='You will fall in love with python '
+line3='Pyhton is interpreted language '
+line4=line1 + line2 + line3
+print(line1.find('you'),line4.count('python'))
+
+```
+Here, hash(#) represent spaces.
+
+- A: 9,2
+- B: 9 1
+- C: (9,1)
+- D: True,1
+
+<details><summary><b>Answer</b></summary>
+<p>
+
+#### Answer: B
+
+‘you’ is at Index 9 in Line1, find() returns the index of substring if found in the string Line1. count() returns the total number of occurences of the substring. Line4 is concatenated string from Line1, Line2 and Line3. We got only one occurrence because python is case sensitive language and one 'python' has 'P' in uppercase, we are looking for the exact match.
+
+</p>
+</details>
+
+---
