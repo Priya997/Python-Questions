@@ -96,18 +96,19 @@ str1 = '{0:.4f} {0:3d} {2} {1}'.format(a, b, c)
 print(str1)
 
 ```
+Here, hash(#) represent spaces.
 
 - A: 3.0000 3 -5 3.876
 - B: 3 3.876 -5 3.876
-- C: 3.0000 '   3' -5 3.876
-- D: 3.0000 '  3' -5 3.876
+- C: 3.0000 ###3 -5 3.876
+- D: 3.0000 ##3 -5 3.876
 
 <details><summary><b>Answer</b></summary>
 <p>
 
 #### Answer: C
 
-At Index 0, integer a is formatted into a float with 4 decimal points, thus 3.0000. At Index 0, a = 3 is formatted into a integer with three blank spaces in front, thus it remains to '   3'. Index 2 and 1 values are picked next, which are -5 and 3.876 respectively. Here, '3' in '3d' is used as a right adjust flag. If we replace '3d' with '{0:-3d}' then it will become '3   ' like this. 
+At Index 0, integer a is formatted into a float with 4 decimal points, thus 3.0000. At Index 0, a = 3 is formatted into a integer with three blank spaces in front, thus it remains to '###3'. Index 2 and 1 values are picked next, which are -5 and 3.876 respectively. Here, '3' in '3d' is used as a right adjust flag. If we replace '3d' with '{0:-3d}' then it will become '3###' like this. 
 </p>
 </details>
 
